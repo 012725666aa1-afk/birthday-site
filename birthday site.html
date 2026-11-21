@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيد ميلاد سعيد يا احمودتي ❤️</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- خلفية القلوب المتطايرة -->
+    <div id="hearts-container"></div>
+
+    <!-- زر تشغيل/إيقاف الموسيقى -->
+    <button id="music-btn" class="floating-btn" title="تشغيل الموسيقى">🎵</button>
+
+    <!-- القسم الأول: الواجهة الترحيبية -->
+    <header class="hero">
+        <div class="hero-content">
+            <span class="badg"اجمل يوم  لأغلى إنسان ✨</span>
+            <h1>كل سنة وأنت طيب يا <span class="highlight">احمودتي</span> ❤️</h1>
+            <p>النهاردة اجمل يوم فى عمرى ، النهاردة اليوم اللي نورت فيه الدنيا ونورت حياتي كلها.</p>
+            <button id="surprise-btn" class="primary-btn">افتح المفاجأة 🎁</button>
+        </div>
+    </header>
+
+    <!-- القسم الثاني: رسالة حب تفاعلية -->
+    <section class="section letter-section">
+        <h2>رسالة من قلبي ل روح قلبي 💌</h2>
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter">
+                    <h3>إلى أغلى ما أملك،</h3>
+                    <p>
+                        
+                    كل سنة وأنت معايا وسندي وضحكتي الحلوة. وجودك في حياتي هو أجمل نعمة ربنا رزقني بيها. 
+                        بتمنالك سنة جديدة كلها نجاح وسعادة وتحقق فيها كل اللي بتتمناه ربنا يجعلها سنة خير ورزق وسعاده ربنا يعطيك من نعيم الارض و اهم حاجه ربنا يحفظك ليا ويباركلى ف عمرك ي احمودتى وأنا دايماً جنبك ومعاك
+                        ي رب السنه الجايه نكون مخطوبين ي احمودتى ربنا ما يحرمنيش من ضحتك الحلوه اللى منوره حياتى 
+                         بحبك اوييييي❤️
+                    </p>
+                    <span class="signature">امالك للأبد ✨</span>
+                </div>
+            </div>
+        </div>
+        <p class="hint">اضغط على الظرف لفتحه</p>
+    </section>
+
+
+
+    <!-- القسم الرابع: أسباب حبي ليك -->
+    <section class="section reasons-section">
+        <h2>ليه بحبك؟ 💖</h2>
+        <p class="hint">اضغط على الكروت عشان تعرف</p>
+        <div class="cards-grid">
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">السبب الأول ✨</div>
+                    <div class="flip-back">حنيتك وطيبة قلبك اللي مفيش زيها في الدنيا</div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">السبب الثاني 🌟</div>
+                    <div class="flip-back">إنك دايماً بتدعمني وواقف في ضهري في كل وقت
+                        سندى و ضهرى و امانى ف الدنيا 
+                    </div>
+                </div>
+            </div>
+            <div class="flip-card" onclick="this.classList.toggle('flipped')">
+                <div class="flip-inner">
+                    <div class="flip-front">السبب الثالث 💫</div>
+                    <div class="flip-back">مليون سبب بحبك علشانه لو فضلت اقول لاخر عمرى مش ها يكفى عايزاك تعرف انى جمبك و فضهرك لاخر نفس فيا ي احمودتى ها نبنى حياتنا نقطه نقطه وأنا معاك</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- القسم الخامس: كيكة عيد الميلاد -->
+    <section class="section cake-section">
+        <h2>اتمنى أمنية واطفي الشمعة 🎂</h2>
+        <div class="cake-container" id="cake">
+            <div class="candle">
+                <div class="flame" id="flame"></div>
+            </div>
+            <div class="cake-top"></div>
+            <div class="cake-middle"></div>
+            <div class="cake-bottom"></div>
+        </div>
+        <p id="wish-msg" class="wish-text">اضغط على الشمعة لإطفائها 🕯️</p>
+    </section>
+
+    <!-- مكتبة قصاصات الاحتفال (Confetti) -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
